@@ -1,0 +1,24 @@
+{
+  "name": "test-mongo-index",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattcollier/test-mongo-index.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattcollier/test-mongo-index/issues"
+  },
+  "homepage": "https://github.com/mattcollier/test-mongo-index#readme",
+  "dependencies": {
+    "bedrock": "^1.18.0",
+    "bedrock-mongodb": "github:digitalbazaar/bedrock-mongodb#6.x"
+  }
+}
