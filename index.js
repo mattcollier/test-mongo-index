@@ -43,7 +43,9 @@ client.connect(async err => {
   try {
     const result = await collection.insertOne(record);
     // console.log('RESULT', result);
-    const r = await collection.find({id: longId}).explain();
+    const r = await collection.find({id: longId})
+      .projection({_id: 0, id: 1})
+      .explain();
     console.log('EXPLAIN', JSON.stringify(r, null, 2));
   } catch(e) {
     console.error(e);
