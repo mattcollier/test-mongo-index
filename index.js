@@ -42,10 +42,14 @@ client.connect(async err => {
 
   try {
     const result = await collection.insertOne(record);
-    console.log('RESULT', result);
+    // console.log('RESULT', result);
+    const r = await collection.findOne({id: longId}).explain();
+    console.log('EXPLAIN', r);
   } catch(e) {
     console.error(e);
   }
+
+
 
   client.close();
 
