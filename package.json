@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/mattcollier/test-mongo-index#readme",
   "dependencies": {
-    "bedrock": "^1.18.0",
-    "bedrock-mongodb": "github:digitalbazaar/bedrock-mongodb#6.x"
+    "mongodb": "^3.3.0-beta2"
   }
 }
