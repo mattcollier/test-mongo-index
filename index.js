@@ -44,7 +44,7 @@ client.connect(async err => {
     const result = await collection.insertOne(record);
     // console.log('RESULT', result);
     const r = await collection.find({id: longId})
-      .projection({_id: 0, id: 1})
+      .project({_id: 0, id: 1})
       .explain();
     console.log('EXPLAIN', JSON.stringify(r, null, 2));
   } catch(e) {
